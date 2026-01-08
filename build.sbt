@@ -8,14 +8,12 @@ inThisBuild(
     organizationName := "Olivier NOUGUIER",
     startYear := Some(2021),
     licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
-    scalaVersion := "2.13.8",
+    scalaVersion := "3.7.4",
     scalacOptions ++= Seq(
       "-unchecked",
       "-deprecation",
-      "-language:_",
       "-encoding",
-      "UTF-8",
-      "-Ywarn-unused:imports",
+      "UTF-8"
     ),
     testFrameworks += new TestFramework("munit.Framework"),
     scalafmtOnCompile := true,
@@ -34,7 +32,7 @@ lazy val `hello-scalameta` =
     .settings(commonSettings)
     .settings(
       libraryDependencies ++= Seq(
-        "org.scalameta"        %% "scalameta" % "4.5.1",
+        "org.scalameta"        %% "scalameta" % "4.14.4",
         library.munit           % Test,
         library.munitScalaCheck % Test,
       ),
