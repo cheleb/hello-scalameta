@@ -32,7 +32,7 @@ lazy val `hello-scalameta` =
     .settings(commonSettings)
     .settings(
       libraryDependencies ++= Seq(
-        "org.scalameta"        %% "scalameta" % "4.14.7",
+        "org.scalameta"        %% "scalameta" % "4.15.0",
         library.munit           % Test,
         library.munitScalaCheck % Test,
       ),
